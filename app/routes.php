@@ -19,9 +19,12 @@ Route::model('user', 'User');
 Route::model('comment', 'Comment');
 Route::model('post', 'Post');
 Route::model('role', 'Role');
+<<<<<<< HEAD
 Route::model('page', 'Page');
 Route::model('navigationgroup', 'NavigationGroup');
 Route::model('navigation', 'Navigation');
+=======
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 
 /** ------------------------------------------
  *  Admin Routes
@@ -79,6 +82,7 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
     Route::post('roles/{role}/delete', 'AdminRolesController@postDelete')
         ->where('role', '[0-9]+');
     Route::controller('roles', 'AdminRolesController');
+<<<<<<< HEAD
     
     # Pages Management
     Route::get('pages/{page}/show', 'AdminPagesController@getShow')
@@ -118,6 +122,8 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
     Route::post('navigation/{nav}/delete', 'AdminNavigationController@postDelete')
         ->where('group', '[0-9]+');
     Route::controller('navigation', 'AdminNavigationController');
+=======
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 
     # Admin Dashboard
     Route::controller('/', 'AdminDashboardController');

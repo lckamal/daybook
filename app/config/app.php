@@ -65,7 +65,11 @@ return array(
 	|
 	*/
 
+<<<<<<< HEAD
 	'key' => 'q2YYG3Tgmtg8IMs66Lgc7voJWjX2Tile',
+=======
+	'key' => 'YourSecretKey!!!',
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 
 	/*
 	|--------------------------------------------------------------------------
@@ -122,8 +126,13 @@ return array(
         'Bllim\Datatables\DatatablesServiceProvider', // Datatables
 
         /* Uncomment for use in development */
+<<<<<<< HEAD
        'Way\Generators\GeneratorsServiceProvider', // Generators
        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // IDE Helpers
+=======
+//        'Way\Generators\GeneratorsServiceProvider', // Generators
+//        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // IDE Helpers
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 
     ),
 

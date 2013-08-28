@@ -26,7 +26,11 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
+<<<<<<< HEAD
     'local' => array('laravel.local'), // Change this to your local machine hostname.
+=======
+    'local' => array('VirtualMint'), // Change this to your local machine hostname.
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
     'staging' => array('your-staging-machine-name'),
     'production' => array('your-production-machine-name'),
 

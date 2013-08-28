@@ -47,8 +47,13 @@
     {{ Basset::show('admin.css') }}
 
 	<style>
+<<<<<<< HEAD
 	body {
 		padding: 60px 0;
+=======
+	.tab-pane {
+		padding-top: 20px;
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 	}
 	</style>
 

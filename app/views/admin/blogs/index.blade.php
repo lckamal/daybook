@@ -21,6 +21,7 @@
 		</h3>
 	</div>
 
+<<<<<<< HEAD
 	<table id="blogs" class="table table-bordered table-hover">
 		<thead>
 			<tr>
@@ -28,6 +29,15 @@
 				<th class="span2">{{{ Lang::get('admin/blogs/table.comments') }}}</th>
 				<th class="span2">{{{ Lang::get('admin/blogs/table.created_at') }}}</th>
 				<th class="span2">{{{ Lang::get('table.actions') }}}</th>
+=======
+	<table id="blogs" class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th class="col-md-4">{{{ Lang::get('admin/blogs/table.title') }}}</th>
+				<th class="col-md-2">{{{ Lang::get('admin/blogs/table.comments') }}}</th>
+				<th class="col-md-2">{{{ Lang::get('admin/blogs/table.created_at') }}}</th>
+				<th class="col-md-2">{{{ Lang::get('table.actions') }}}</th>
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 			</tr>
 		</thead>
 		<tbody>
@@ -41,7 +51,11 @@
 		var oTable;
 		$(document).ready(function() {
 			oTable = $('#blogs').dataTable( {
+<<<<<<< HEAD
 				"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+=======
+				"sDom": "<'row'<'col-md-6'l><'col-md-6'f>r>t<'row'<'col-md-6'i><'col-md-6'p>>",
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 				"sPaginationType": "bootstrap",
 				"oLanguage": {
 					"sLengthMenu": "_MENU_ records per page"

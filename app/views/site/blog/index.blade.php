@@ -15,6 +15,7 @@
 
 		<!-- Post Content -->
 		<div class="row">
+<<<<<<< HEAD
 			<div class="span2">
 				<a href="{{{ $post->url() }}}" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
 			</div>
@@ -23,13 +24,27 @@
 					{{ String::tidy(Str::limit($post->content, 200)) }}
 				</p>
 				<p><a class="btn btn-mini" href="{{{ $post->url() }}}">Read more</a></p>
+=======
+			<div class="col-md-2">
+				<a href="{{{ $post->url() }}}" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a>
+			</div>
+			<div class="col-md-6">
+				<p>
+					{{ String::tidy(Str::limit($post->content, 200)) }}
+				</p>
+				<p><a class="btn btn-mini btn-default" href="{{{ $post->url() }}}">Read more</a></p>
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 			</div>
 		</div>
 		<!-- ./ post content -->
 
 		<!-- Post Footer -->
 		<div class="row">
+<<<<<<< HEAD
 			<div class="span8">
+=======
+			<div class="col-md-8">
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 				<p></p>
 				<p>
 					<i class="icon-user"></i> by <span class="muted">{{{ $post->author->username }}}</span>

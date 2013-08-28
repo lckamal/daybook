@@ -287,7 +287,11 @@ class AdminUsersController extends AdminController {
                             No
                         @endif')
 
+<<<<<<< HEAD
         ->add_column('actions', '<a href="{{{ URL::to(\'admin/users/\' . $id . \'/edit\' ) }}}" class="iframe btn btn-mini">{{{ Lang::get(\'button.edit\') }}}</a>
+=======
+        ->add_column('actions', '<a href="{{{ URL::to(\'admin/users/\' . $id . \'/edit\' ) }}}" class="iframe btn btn-mini btn-default">{{{ Lang::get(\'button.edit\') }}}</a>
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
                                 @if($username == \'admin\')
                                 @else
                                     <a href="{{{ URL::to(\'admin/users/\' . $id . \'/delete\' ) }}}" class="iframe btn btn-mini btn-danger">{{{ Lang::get(\'button.delete\') }}}</a>

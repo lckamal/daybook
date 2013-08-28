@@ -150,6 +150,7 @@ class AdminCommentsController extends AdminController
 
         return Datatables::of($comments)
 
+<<<<<<< HEAD
         ->edit_column('content', '<a href="{{{ URL::to(\'admin/comments/\'. $id .\'/edit\') }}}">{{{ Str::limit($content, 40, \'...\') }}}</a>')
 
         ->edit_column('post_name', '<a href="{{{ URL::to(\'admin/blogs/\'. $postid .\'/edit\') }}}">{{{ Str::limit($post_name, 40, \'...\') }}}</a>')
@@ -157,6 +158,15 @@ class AdminCommentsController extends AdminController
         ->edit_column('poster_name', '<a href="{{{ URL::to(\'admin/users/\'. $userid .\'/edit\') }}}">{{{ $poster_name }}}</a>')
 
         ->add_column('actions', '<a href="{{{ URL::to(\'admin/comments/\' . $id . \'/edit\' ) }}}" class="iframe btn btn-mini">{{{ Lang::get(\'button.edit\') }}}</a>
+=======
+        ->edit_column('content', '<a href="{{{ URL::to(\'admin/comments/\'. $id .\'/edit\') }}}" class="iframe cboxElement">{{{ Str::limit($content, 40, \'...\') }}}</a>')
+
+        ->edit_column('post_name', '<a href="{{{ URL::to(\'admin/blogs/\'. $postid .\'/edit\') }}}" class="iframe cboxElement">{{{ Str::limit($post_name, 40, \'...\') }}}</a>')
+
+        ->edit_column('poster_name', '<a href="{{{ URL::to(\'admin/users/\'. $userid .\'/edit\') }}}" class="iframe cboxElement">{{{ $poster_name }}}</a>')
+
+        ->add_column('actions', '<a href="{{{ URL::to(\'admin/comments/\' . $id . \'/edit\' ) }}}" class="iframe btn btn-default btn-mini">{{{ Lang::get(\'button.edit\') }}}</a>
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
                 <a href="{{{ URL::to(\'admin/comments/\' . $id . \'/delete\' ) }}}" class="iframe btn btn-mini btn-danger">{{{ Lang::get(\'button.delete\') }}}</a>
             ')
 
@@ -167,4 +177,8 @@ class AdminCommentsController extends AdminController
         ->make();
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be

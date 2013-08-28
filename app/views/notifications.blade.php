@@ -1,5 +1,9 @@
 @if (count($errors->all()) > 0)
+<<<<<<< HEAD
 <div class="alert alert-error alert-block">
+=======
+<div class="alert alert-danger alert-block">
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<h4>Error</h4>
 	Please check the form below for errors
@@ -21,7 +25,11 @@
 @endif
 
 @if ($message = Session::get('error'))
+<<<<<<< HEAD
 <div class="alert alert-error alert-block">
+=======
+<div class="alert alert-danger alert-block">
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<h4>Error</h4>
     @if(is_array($message))

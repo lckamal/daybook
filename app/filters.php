@@ -78,9 +78,13 @@ Entrust::routeNeedsRole( 'admin*', array('admin'), Redirect::to('/') );
 Entrust::routeNeedsPermission( 'admin/blogs*', 'manage_blogs', Redirect::to('/admin') );
 Entrust::routeNeedsPermission( 'admin/comments*', 'manage_comments', Redirect::to('/admin') );
 Entrust::routeNeedsPermission( 'admin/users*', 'manage_users', Redirect::to('/admin') );
+<<<<<<< HEAD
 Entrust::routeNeedsPermission( 'admin/pages*', 'manage_pages', Redirect::to('/admin') );
 Entrust::routeNeedsPermission( 'admin/navigation*', 'manage_navigation', Redirect::to('/admin') );
 Entrust::routeNeedsPermission( 'admin/navigation/groups*', 'manage_navigation_groups', Redirect::to('/admin') );
+=======
+Entrust::routeNeedsPermission( 'admin/roles*', 'manage_roles', Redirect::to('/admin') );
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 
 /*
 |--------------------------------------------------------------------------

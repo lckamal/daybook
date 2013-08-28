@@ -12,8 +12,12 @@ class DatabaseSeeder extends Seeder {
         $this->call('CommentsTableSeeder');
         $this->call('RolesTableSeeder');
         $this->call('PermissionsTableSeeder');
+<<<<<<< HEAD
     	$this->call('NavigationGroupsTableSeeder');
         $this->call('AddPermissionsTableSeeder');
 	}
+=======
+    }
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 
 }

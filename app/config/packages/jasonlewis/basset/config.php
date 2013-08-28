@@ -59,6 +59,7 @@ return array(
                 $collection->javascript('//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
                 //$collection->add('bootstrap/bootstrap.js');
                 $collection->requireDirectory('../../../vendor/twbs/bootstrap/js');
+<<<<<<< HEAD
                 $collection->add('../../../vendor/twbs/bootstrap/js/bootstrap-affix.js');
                 $collection->add('../../../vendor/twbs/bootstrap/js/bootstrap-alert.js');
                 $collection->add('../../../vendor/twbs/bootstrap/js/bootstrap-button.js');
@@ -72,6 +73,8 @@ return array(
                 $collection->add('../../../vendor/twbs/bootstrap/js/bootstrap-tab.js');
                 $collection->add('../../../vendor/twbs/bootstrap/js/bootstrap-transition.js');
                 $collection->add('../../../vendor/twbs/bootstrap/js/bootstrap-typeahead.js');
+=======
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
                 $collection->add('wysihtml5/wysihtml5-0.3.0.js');
                 $collection->add('wysihtml5/bootstrap-wysihtml5.js');
                 $collection->javascript('http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js');
@@ -79,7 +82,10 @@ return array(
                 $collection->add('datatables.fnReloadAjax.js');
                 $collection->add('jquery.colorbox.js');
                 $collection->add('prettify.js');
+<<<<<<< HEAD
                 $collection->add('navigation.js');
+=======
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
             })->apply('JsMin');
         }
 

@@ -242,7 +242,11 @@ class AdminRolesController extends AdminController {
         ->edit_column('users', '{{{ DB::table(\'assigned_roles\')->where(\'role_id\', \'=\', $id)->count()  }}}')
 
 
+<<<<<<< HEAD
         ->add_column('actions', '<a href="{{{ URL::to(\'admin/roles/\' . $id . \'/edit\' ) }}}" class="iframe btn btn-mini">{{{ Lang::get(\'button.edit\') }}}</a>
+=======
+        ->add_column('actions', '<a href="{{{ URL::to(\'admin/roles/\' . $id . \'/edit\' ) }}}" class="iframe btn btn-mini btn-default">{{{ Lang::get(\'button.edit\') }}}</a>
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
                                 <a href="{{{ URL::to(\'admin/roles/\' . $id . \'/delete\' ) }}}" class="iframe btn btn-mini btn-danger">{{{ Lang::get(\'button.delete\') }}}</a>
                     ')
 

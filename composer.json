@@ -24,7 +24,11 @@
         "mockery/mockery": "dev-master@dev",
         "summerstreet/woodling": "0.1.*",
         "barryvdh/laravel-ide-helper": "dev-master",
+<<<<<<< HEAD
         "leafo/lessphp": "v0.3.9",
+=======
+        "leafo/lessphp": "v0.4.0",
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
         "natxet/CssMin": "dev-master",
         "lmammino/jsmin4assetic": "1.0.*"
 	},
@@ -42,14 +46,25 @@
 		]
 	},
 	"scripts": {
+<<<<<<< HEAD
 		
+=======
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 		"post-install-cmd": [
 			"php artisan optimize"
 		],
 		"post-update-cmd": [
+<<<<<<< HEAD
             "php artisan ide-helper:generate",
             "php artisan optimize"
         ]
+=======
+			"php artisan optimize"
+		]
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 	},
 	"config": {
 		"preferred-install": "dist"

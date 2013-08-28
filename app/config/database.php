@@ -55,9 +55,15 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
+<<<<<<< HEAD
 			'database'  => 'daybook',
 			'username'  => 'root',
 			'password'  => 'root',
+=======
+			'database'  => 'laravelbootstrapstarter',
+			'username'  => 'user',
+			'password'  => 'password',
+>>>>>>> 051b2c73433682c5d32f025b4b13e7c960a7e6be
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
